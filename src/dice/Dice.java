@@ -22,7 +22,14 @@ public class Dice {
 	}
 
 	//write a method to determine if two Dice objects are equals
-	
+	public boolean isDouble(Dice d2) {
+		return spots == d2.pips();
+	}
+	public int pips() {
+		return spots;
+	}
 	//write a method that prints a Die
-
+	public void print() {
+		System.out.println(spots);
+	}
 }
